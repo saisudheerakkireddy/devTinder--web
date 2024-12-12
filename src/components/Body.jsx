@@ -1,5 +1,5 @@
 import React from 'react'
-import NavBar from './Navbar'
+import NavBar from './NavBar'
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import Login from './Login'
@@ -7,11 +7,11 @@ import Login from './Login'
 const Body = () => {
   return (
     <div> 
-Body
+
 <NavBar/>
 <Outlet/>
 <Footer/>
-<Login/>
+
 </div>
   )
 }
