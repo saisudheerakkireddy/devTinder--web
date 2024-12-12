@@ -9,3 +9,7 @@
 - Install react router dom
 - Create BrowserRouter > Routes > Route=/Body > RouteChildren
 - Create a Footer
+- Create a Login Page
+- Install axios
+- Install CORS in backend => add middleware and configure them with {origin and credentials: true}
+- When you are making API call using axios use {withCredentials : true}
