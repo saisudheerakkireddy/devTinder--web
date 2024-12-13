@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { addUser } from '../utils/userSlice'
 import axios from 'axios'
 import { BASE_URL } from '../utils/constants'
+import UserCard from './UserCard'
 
 
 
@@ -19,7 +20,7 @@ const Body = () => {
 
 const fetchUser = async() => {
 try{
-  const res = await axios.get(BASE_URL + "profile/view",
+  const res = await axios.get(BASE_URL + "/profile/view",
     {withCredentials:true});
 
     dispatch(addUser(res.data))
@@ -56,6 +57,7 @@ useEffect(() => {
 <NavBar/>
 <Outlet/>
 <Footer/>
+
 
 
 
